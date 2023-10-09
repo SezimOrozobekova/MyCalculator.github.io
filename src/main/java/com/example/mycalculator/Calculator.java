@@ -19,31 +19,25 @@ public class Calculator {
     }
 
 
-//        switch (operator){
-//            case '+':
-//                this.result = operand1 + operand2;
-//                break;
-//            case '-':
-//                this.result = operand1 - operand2;
-//                break;
-//            case '/':
-//                if (operand2 != 0){
-//                    this.result = operand1/ operand2;
-//                    break;
-//                } else{
-//                    System.out.println("Can't divide by 0");
-//                    break;
-//                }
-//
-//            case '*':
-//                  this.result =  operand1 * operand2;
-//                  break;
-//            case '=':
-//                  break;
-//        }
+
+
         public void calculate(){
             if(this.operator == '+') {
                 this.result = this.operand1 + this.operand2;
+            }
+            if(this.operator == '-') {
+                this.result = this.operand1 - this.operand2;
+            }
+            if(this.operator == '*') {
+                this.result = this.operand1 * this.operand2;
+            }
+            if(this.operator == '/') {
+                if(operand2 != 0){
+                    this.result = this.operand1 / this.operand2;
+                } else {
+
+                }
+
             }
         }
 
