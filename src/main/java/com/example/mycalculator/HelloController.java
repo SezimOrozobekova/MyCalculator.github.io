@@ -129,7 +129,6 @@ public class HelloController{
          } else{
              inputfield.setText(Double.toString(d));
          }
-
       }
 
    }

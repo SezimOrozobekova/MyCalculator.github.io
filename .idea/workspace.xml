@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80679598-f50d-43c4-8a01-f20d5e81e0a2" name="Changes" comment="Any number and operation(+-/*)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/mycalculator/CalculatorDesign.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/mycalculator/CalculatorDesign.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="80679598-f50d-43c4-8a01-f20d5e81e0a2" name="Changes" comment="Print double, int and infinity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +82,7 @@
       <workItem from="1697018792372" duration="1833000" />
       <workItem from="1697026595788" duration="83000" />
       <workItem from="1697027548802" duration="710000" />
-      <workItem from="1697028593271" duration="299000" />
+      <workItem from="1697028593271" duration="717000" />
     </task>
     <task id="LOCAL-00001" summary="Calculate 1 + 2 = 3.0">
       <option name="closed" value="true" />
@@ -114,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696836130368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Print double, int and infinity">
+      <option name="closed" value="true" />
+      <created>1697029300203</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697029300203</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +137,7 @@
     <MESSAGE value="Calculate 1 + 2 = 3.0" />
     <MESSAGE value="Calculate 1 + 2" />
     <MESSAGE value="Any number and operation(+-/*)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Any number and operation(+-/*)" />
+    <MESSAGE value="Print double, int and infinity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print double, int and infinity" />
   </component>
 </project>
