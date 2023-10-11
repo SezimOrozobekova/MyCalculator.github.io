@@ -124,11 +124,11 @@ public class HelloController{
          calc.setOperand2(d);
          calc.calculate();
          d = calc.getResult();
-         if(d == (int)d){
+        if(d == (int)d){
             inputfield.setText(Integer.toString((int)d));
-         } else{
-             inputfield.setText(Double.toString(d));
-         }
+        } else{
+            inputfield.setText(Double.toString(d));
+        }
       }
 
    }
