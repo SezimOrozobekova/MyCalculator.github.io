@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" prefHeight="580.0" prefWidth="452.0" spacing="20.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mycalculator.HelloController">
     <padding>
@@ -23,32 +24,79 @@
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#onButtonOneClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="1" GridPane.rowIndex="2" />
-            <Button layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#onButtonTwoClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button layoutX="113.0" layoutY="75.0" mnemonicParsing="false" onAction="#onButtonTreeClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button layoutX="220.0" layoutY="75.0" mnemonicParsing="false" onAction="#onButtonFourClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="4" GridPane.rowIndex="3" />
-            <Button layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonFiveClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button layoutX="113.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonSixClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button layoutX="216.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonSevenClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="7" GridPane.rowIndex="4" />
-            <Button layoutX="14.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonEightClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button layoutX="113.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonNineClick" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#onButtonZeroClick" prefHeight="49.0" prefWidth="94.0" style="-fx-border-radius: 10 10 10 10;" text="0" GridPane.rowIndex="5" />
-            <Button layoutX="113.0" layoutY="256.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="95.0" style="-fx-border-radius: 10 10 10 10;" text="," GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Button layoutX="216.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonMultiplyClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button layoutX="319.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonMinusClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button layoutX="319.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonPlusClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#onButtonEqualClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Button layoutX="10.0" layoutY="316.0" mnemonicParsing="false" onAction="#onButtonClearClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: grey;" text="c" GridPane.rowIndex="1" />
-            <Button layoutX="10.0" layoutY="377.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: grey;" text="+/-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button layoutX="113.0" layoutY="377.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: grey;" text="\%" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button layoutX="216.0" layoutY="377.0" mnemonicParsing="false" onAction="#onButtonDivideClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <TextField fx:id="inputfield" prefHeight="48.0" prefWidth="65.0" style="-fx-background-color: white;" GridPane.columnSpan="4" />
+            <Button mnemonicParsing="false" onAction="#onButtonOneClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#onButtonTwoClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="113.0" layoutY="75.0" mnemonicParsing="false" onAction="#onButtonTreeClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="220.0" layoutY="75.0" mnemonicParsing="false" onAction="#onButtonFourClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonFiveClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="113.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonSixClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="216.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonSevenClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="7" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonEightClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="113.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonNineClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-radius: 60px;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#onButtonZeroClick" prefHeight="49.0" prefWidth="94.0" style="-fx-background-radius: 60px;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="216.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonMultiplyClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange; -fx-background-radius: 15px;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="319.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonMinusClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange; -fx-background-radius: 15px;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="316.0" mnemonicParsing="false" onAction="#onButtonClearClick" prefHeight="54.0" prefWidth="95.0" style="-fx-background-color: grey; -fx-background-radius: 15px;" text="c" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="319.0" layoutY="196.0" mnemonicParsing="false" onAction="#onButtonPlusClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange; -fx-background-radius: 15px;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#onButtonEqualClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: grey; -fx-background-radius: 15px;" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button layoutX="216.0" layoutY="377.0" mnemonicParsing="false" onAction="#onButtonDivideClick" prefHeight="51.0" prefWidth="95.0" style="-fx-background-color: orange; -fx-background-radius: 15px;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <TextField fx:id="inputfield" prefHeight="48.0" prefWidth="65.0" style="-fx-background-color: white;" GridPane.columnSpan="4">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
 
 
          </children>

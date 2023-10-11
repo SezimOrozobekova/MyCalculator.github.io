@@ -23,51 +23,61 @@ public class HelloController{
    @FXML
    protected void onButtonOneClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText( val + "1" );
    }
    @FXML
    protected void onButtonTwoClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText(val + "2" );
    }
    @FXML
    protected void onButtonTreeClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText( val + "3" );
    }
    @FXML
    protected void onButtonFourClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText(val + "4" );
    }
    @FXML
    protected void onButtonFiveClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText( val + "5" );
    }
    @FXML
    protected void onButtonSixClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText(val + "6" );
    }
    @FXML
    protected void onButtonSevenClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText( val + "7" );
    }
    @FXML
    protected void onButtonEightClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText(val + "8" );
    }
    @FXML
    protected void onButtonNineClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText( val + "9" );
    }
    @FXML
    protected void onButtonZeroClick(){
       String val = inputfield.getText();
+      if(val.equals("0")) val="";
       inputfield.setText(val + "0" );
    }
 
@@ -80,6 +90,7 @@ public class HelloController{
       double d = Double.parseDouble(val); //convert val to double
       calc.setOperator('+');
       calc.setOperand1(d);
+
    }
    @FXML
    protected void onButtonDivideClick(){
@@ -109,10 +120,16 @@ public class HelloController{
    protected void onButtonEqualClick(){
       String val = inputfield.getText();
       inputfield.setText("");
-      double d = Double.parseDouble(val); //convert val to double
-      calc.setOperand2(d);
-      calc.calculate();
-      d = Math.floor(calc.getResult());
-      inputfield.setText(Integer.toString((int)d));
+         double d = Double.parseDouble(val); //convert val to double
+         calc.setOperand2(d);
+         calc.calculate();
+         d = calc.getResult();
+         if(d == (int)d){
+            inputfield.setText(Integer.toString((int)d));
+         } else{
+             inputfield.setText(Double.toString(d));
+         }
+
+      }
+
    }
-}

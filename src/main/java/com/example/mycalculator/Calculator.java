@@ -6,6 +6,12 @@ public class Calculator {
     private char operator;
     private double result;
 
+
+
+
+
+
+
     public void setOperand1(double operand1) {
         this.operand1 = operand1;
     }
@@ -32,12 +38,7 @@ public class Calculator {
                 this.result = this.operand1 * this.operand2;
             }
             if(this.operator == '/') {
-                if(operand2 != 0){
-                    this.result = this.operand1 / this.operand2;
-                } else {
-
-                }
-
+                this.result = this.operand1 / this.operand2;
             }
         }
 
