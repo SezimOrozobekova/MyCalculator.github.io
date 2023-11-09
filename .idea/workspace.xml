@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80679598-f50d-43c4-8a01-f20d5e81e0a2" name="Changes" comment="Print double, int and infinity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/DivisionByZeroException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mycalculator/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

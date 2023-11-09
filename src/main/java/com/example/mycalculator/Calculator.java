@@ -6,12 +6,6 @@ public class Calculator {
     private char operator;
     private double result;
 
-
-
-
-
-
-
     public void setOperand1(double operand1) {
         this.operand1 = operand1;
     }
@@ -27,7 +21,7 @@ public class Calculator {
 
 
 
-        public void calculate(){
+        public void calculate() throws DivisionByZeroException{
             if(this.operator == '+') {
                 this.result = this.operand1 + this.operand2;
             }
@@ -38,7 +32,12 @@ public class Calculator {
                 this.result = this.operand1 * this.operand2;
             }
             if(this.operator == '/') {
-                this.result = this.operand1 / this.operand2;
+                if (operand2 == 0){
+                    throw new DivisionByZeroException("Can't divide by zero");
+                } else {
+                    this.result = this.operand1 / this.operand2;
+                }
+
             }
         }
 

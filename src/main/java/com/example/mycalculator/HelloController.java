@@ -14,6 +14,7 @@ public class HelloController{
    @FXML
    private TextField inputfield;
 
+
    @FXML
    protected void onButtonClearClick(){
       String val = inputfield.getText();
@@ -118,17 +119,25 @@ public class HelloController{
    }
    @FXML
    protected void onButtonEqualClick(){
+
       String val = inputfield.getText();
       inputfield.setText("");
          double d = Double.parseDouble(val); //convert val to double
          calc.setOperand2(d);
-         calc.calculate();
-         d = calc.getResult();
-         if(d == (int)d){
-            inputfield.setText(Integer.toString((int)d));
-         } else{
-            inputfield.setText(Double.toString(d));
+         try{
+            calc.calculate();
+            d = calc.getResult();
+            if(d == (int)d){
+               inputfield.setText(Integer.toString((int)d));
+            } else{
+               inputfield.setText(Double.toString(d));
+            }
+         } catch(DivisionByZeroException e){
+            inputfield.setText(e.getMessage());
+         } catch (IllegalArgumentException e){
+            inputfield.setText(e.getMessage());
          }
+
       }
 
    }
